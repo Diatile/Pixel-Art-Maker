@@ -1,7 +1,4 @@
-
-
-
- // When size is submitted and color picked by the user, call makeGrid() and colorIn() 
+// When size is submitted and color picked by the user, call makeGrid() and colorIn() 
  $('#sizePicker').submit(function(evt){
 	 evt.preventDefault();
 	 $('#pixelCanvas').children().remove();
@@ -44,7 +41,9 @@ function colorIn(){
 
 	});
 }
-
- 
- 
- 
+//Clear the grid and reset the inputs
+$('#clear').click(function(){
+	$('#pixelCanvas').children().remove();
+	$('#inputHeight').val(1);
+	$('#inputWidth').val(1);
+});
