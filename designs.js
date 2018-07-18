@@ -32,7 +32,7 @@ function colorIn(){
 	var colorSelector;
 	colorSelector = $('#colorPicker').val();
 	$('td').click(function(){
-		$(this).css('background',colorSelector);
+		$(this).css('background-color',colorSelector);
 	});
 	//Remove color from grid when double click cell
 	$('td').dblclick(function(evt){
